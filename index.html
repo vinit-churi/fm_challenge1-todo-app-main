@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./all.css" />
+    <title>TODO APP</title>
+  </head>
+  <body>
+    <section class="hero">
+      <header class="hero_header">
+        <span class="hero_header_title">TODO</span>
+        <span class="hero_header_status">
+          <i class="fas fa-2x fa-moon"></i>
+        </span>
+      </header>
+    </section>
+    <section class="App-content">
+      <input type="text" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
+      <!-- <ul>
+        <li>wake up early in the morning</li>
+        <li>listen to influential youtube video</li>
+        <li>go to the gym</li>
+        <li>refresh myself</li>
+        <li>start coding</li>
+      </ul> -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="App-content_task-list">
+        <div class="task-list_item">
+          <span>🌅</span>
+          <span>wake up early in the morning</span>
+          <span><i class="fas fa-times"></i></span>
+        </div>
+        <div class="task-list_item">
+          <span>😌</span>
+          <span>listen to influential youtube video</span>
+          <span><i class="fas fa-times"></i></span>
+        </div>
+        <div class="task-list_item">
+          <span>💪</span>
+          <span>go to the gym</span>
+          <span><i class="fas fa-times"></i></span>
+        </div>
+        <div class="task-list_item">
+          <span>⛱</span>
+          <span>refresh myself</span>
+          <span><i class="fas fa-times"></i></span>
+        </div>
+        <div class="task-list_item">
+          <span>👷</span>
+          <span>start coding</span>
+          <span><i class="fas fa-times"></i></span>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

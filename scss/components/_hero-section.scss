@@ -1,0 +1,26 @@
+.hero {
+  background-image: url("../../images/bg-mobile-light.jpg");
+  background-size: cover;
+  height: 230px;
+  background-repeat: no-repeat;
+  position: relative;
+  //   width: 100%;
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    color: $primary-font-color;
+
+    &_title {
+      font-family: "Pacifico", cursive;
+      font-size: 2rem;
+    }
+    &_status {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
