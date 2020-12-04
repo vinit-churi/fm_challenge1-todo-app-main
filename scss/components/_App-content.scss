@@ -13,19 +13,24 @@
 
   &_task-input {
     position: relative;
-    background-color: aqua;
+    // background-color: aqua;
     display: flex;
     width: 100%;
 
     & input {
-      padding-left: 36px;
+      height: 50px;
+      padding-left: 43px;
       border-radius: 8px;
       width: 100%;
+      border-style: none;
+      // margin-bottom: ;
     }
     & i {
       position: absolute;
       align-self: center;
-      padding-left: 7px;
+      padding-left: 14px;
+      transform: scale(1.3);
+      // border-style: none;
       // top: 0;
       // bottom: 5px;
       // margin-top: auto;
@@ -34,21 +39,31 @@
   }
 
   &_task-list {
-    background-color: $primary-font-color;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    // background-color: $primary-font-color;
+    // background-color: green;
     // color: red;
     width: 100%;
 
     &_item {
+      height: 50px;
       background-color: $primary-font-color;
       display: flex;
+      // gap: ;
+      // margin-top: 20px;
+      // border: solid 5px red;
+      align-items: center;
       // justify-content: space-between;
       // width: 100%;
       // color: brown;
 
-      // & span {
-      //   flex-basis: 1fr;
-      //   width: 100%;
-      // }
+      & span i {
+        transform: scale(1.3);
+        // color: ;
+      }
 
       &_para {
         // color: red;
@@ -62,11 +77,12 @@
         // text-align: end;
         // color: green;
         // margin-right: 0px;
-        margin-right: 10px;
+        margin-right: 15px;
         margin-left: auto;
 
         & i {
           // justify-self: end;
+          // transform: scale(1.3);
         }
       }
     }
@@ -74,5 +90,21 @@
 }
 
 .fa-check-circle {
-  padding-left: 7px;
+  padding-left: 14px;
+}
+
+.temproary {
+  background-color: #eeeeee;
+  height: 1100px;
+  // width: 100%;
+}
+
+#first {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#last {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
